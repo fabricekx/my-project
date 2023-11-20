@@ -1,0 +1,33 @@
+git init (initialiser un projet une première fois)
+git remote add origin https... (lier un répository en local avec celui en ligne)
+git branch -M main (à faire une fois aussi au démarrage du projet)
+
+git add -A (prêt)
+git commit -m "msg" (feu)
+git push -u origin main (partez)
+
+git branch (voir les branches actives)
+git branch nouvelleBranche (créer une branche)
+git checkout nouvelleBranche (se positionner sur une branche)
+
+git pull (pour se mettre à jour sur une branche en local)
+
+
++++
+
+git branch -d nouvelleBranche
+
+
+
+++ travailler en équipe
+settings>collaborators>entrez le userName du collaborateur
+accepter l'invitation
+git clone https://...
+cd my-project
+git branch maBranch
+git checkout maBranch
+modifcation ou ajout de fichiers
+git add -A
+git commit -m "mes modifs"
+git push -u origin maBranch
+pull request > create pull request > merge
