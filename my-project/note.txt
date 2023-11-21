@@ -31,3 +31,25 @@ git add -A
 git commit -m "mes modifs"
 git push -u origin maBranch
 pull request > create pull request > merge
+
+
+// scénario 1 : je suis un noveau dev et je vais développer une nouvelle fonctionnalité
+
+git clone https:///...
+git branch maNouvelleBranche
+git checkout maNouvelleBranche
+Je fais mes modifications
+git add -A
+git commit -m "nom de la mofidication"
+git push -u origin maNouvelleBranche
+
+// scénario2 : (la suite du scénario 1 je veux développer une nouvelle fonctionnalité mais d'autres développeurs ont mergé leur code dans main)
+
+git checkout main 
+git pull 
+git branch maNouvelleAutreBranche
+git checkout maNouvelleAutreBranche
+Je fais mes modifications
+git add -A
+git commit -m "nom de la mofidication"
+git push -u origin maNouvelleAutreBranche
